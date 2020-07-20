@@ -14,13 +14,10 @@ def call_one_exe(a):
     return output.split(',')
 
 
-
 if __name__=='__main__':
     #parse is only needed if we want to pass arg
     parser = argparse.ArgumentParser()
-#     parser.add_argument('--num_thread', type=int, default=1000)
     args, _ = parser.parse_known_args()
-
     
     print('Received arguments {}'.format(args))
     

@@ -10,12 +10,14 @@ using namespace std;
 
 void print(std::vector<int> const &input)
 {
-	for (int i = 0; i < input.size(); i++) {
-		std::cout << input.at(i);
+    for (int i = 0; i < input.size(); i++)
+    {
+        std::cout << input.at(i);
         if (i!=input.size()-1)
             cout<< ',';
-	}
+    }
 }
+
 
 std::vector<std::string> split(const std::string& s, char delimiter)
 {
@@ -28,6 +30,7 @@ std::vector<std::string> split(const std::string& s, char delimiter)
    }
    return tokens;
 }
+
 
 int main(int argc, char* argv[])
 {
@@ -56,9 +59,7 @@ int main(int argc, char* argv[])
             result.push_back(result_temp);
             result_temp = 0;
             counter = 0;
-    }
-    
-    
+    }    
     print(result);
     return 0;
 }
