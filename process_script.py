@@ -21,11 +21,11 @@ if __name__=='__main__':
     
     print('Received arguments {}'.format(args))
     
-    files = glob('/opt/ml/processing/input/*')
+    files = glob('/opt/ml/processing/input/*.csv')
     
     for i, f in enumerate(files):
         try:
-            data = pd.read_csv(f, header=None)
+            data = pd.read_csv(f, header=None, engine='python')
             string = str(list(data.values.flat)).replace(' ','')[1:-1]
             #string looks like 2,3,5,6,7,8. Space is removed. '[' and ']' are also removed.
             predictions = call_one_exe(string)
