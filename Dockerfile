@@ -10,8 +10,6 @@ RUN curl -LO http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.s
 ENV PATH=/miniconda3/bin:${PATH}
 
 RUN conda update -y conda && \
-    conda install -c conda-forge pyarrow=0.14.1 && \
-    conda install -c mlio -c conda-forge mlio-py=0.1 && \
     conda install -c anaconda scipy
 
 # Python won’t try to write .pyc or .pyo files on the import of source modules
