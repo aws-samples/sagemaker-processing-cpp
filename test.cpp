@@ -1,12 +1,10 @@
 #include <sstream>
 #include <iostream>
-using namespace std;
-
 #include <string>
 #include <vector>
 #include <sstream>
 #include <iostream>
-
+using namespace std;
 
 void print(std::vector<int> const &input)
 {
