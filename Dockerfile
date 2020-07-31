@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-    apt-get -y install build-essential libatlas-dev git wget curl nginx jq libatlas3-base
+    apt-get -y install build-essential libatlas-dev git wget curl 
 
 RUN curl -LO http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
     bash Miniconda3-latest-Linux-x86_64.sh -bfp /miniconda3 && \
